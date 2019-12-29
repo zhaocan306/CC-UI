@@ -10,6 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
+		"checkSiteMap": false,
 		"coverView": true
 	},
 	"compileType": "miniprogram",

@@ -1,0 +1,64 @@
+/*
+  CC UI组件库是一个纯个人项目，为了锻炼自己微信小程序的能力，主要集中了一些平时能够用到的元素与组件。
+
+  github仓库地址：https://github.com/zhaocan306/CC-UI.git
+*/
+
+/*
+  初始化项目配置
+*/
+page {
+  background: #F8F9FD;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+}
+
+view,
+scroll-view,
+image,
+swiper,
+button,
+input,
+textarea,
+form,
+label,
+navigator  {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+/*****
+  flex布局
+******/
+.flex {
+  display: flex;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
