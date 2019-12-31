@@ -1,10 +1,39 @@
-/*
+/*********
   圆角边框
-*/
+*********/
 .round {
 	border-radius: 5000rpx;
 }
-
 .radius {
 	border-radius: 6rpx;
+}
+/*********
+  瀑布流布局
+*********/
+.cc-waterfall {
+  padding: 0 24rpx;
+  display: flex;
+}
+.cc-waterfall .cc-waterfall-list {
+  flex: 1;
+  margin-right: 48rpx;
+  padding-bottom: 48rpx;
+}
+.cc-waterfall .cc-waterfall-list:nth-child(2n) {
+  margin-right: 0rpx;
+}
+.cc-waterfall .cc-waterfall-item {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 24rpx;
+  margin-top: 48rpx;
+  color: var(--white);
+  position: relative;
+}
+.cc-waterfall-list [class*="icon-"] {
+	font-size: 52rpx;
+  height: 60rpx;
+  line-height: 60rpx;
 }

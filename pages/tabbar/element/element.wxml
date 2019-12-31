@@ -1,18 +1,18 @@
 <!-- 列表 -->
-<view class="list">
-  <view class="item">
+<view class="cc-waterfall">
+  <view class="cc-waterfall-list ">
     <block wx:for="{{dataList}}" wx:key="index" wx:if="{{(index+1)%2!=0}}">
       <template is="extendItem" data="{{item,index:index}}"/>
     </block>
   </view>
-  <view class="item">
+  <view class="cc-waterfall-list ">
     <block wx:for="{{dataList}}" wx:key="index" wx:if="{{(index+1)%2==0}}">
       <template is="extendItem" data="{{item,index:index}}"/>
     </block>
   </view>
   <!-- 模板 -->
   <template name="extendItem">
-    <navigator class="item-card radius">
+    <navigator class="cc-waterfall-item radius shadow bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/element/{{item.tip}}/{{item.tip}}">
       <view class="flex align-center justify-between">
         <text class="item-name">{{item.name}}</text>
         <text class="iconfont {{item.icon}}"></text>

@@ -15,7 +15,16 @@
     {
       "root": "pages/element/",
       "pages": [
-        "index/index"
+        "layout/layout",
+        "text/text",
+        "color/color",
+        "shadow/shadow",
+        "icon/icon",
+        "identity/identity",
+        "button/button",
+        "tag/tag",
+        "loading/loading",
+        "progress/progress"
       ]
     },
     {
@@ -73,6 +82,9 @@
     "connectSocket": 10000,
     "uploadFile": 10000,
     "downloadFile": 10000
+  },
+  "usingComponents": {
+    "Custom": "/components/custom/custom"
   },
   "permission": {
     "scope.userLocation": {

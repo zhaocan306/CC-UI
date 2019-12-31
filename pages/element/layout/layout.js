@@ -1,4 +1,4 @@
-// pages/element/index/index.js
+// pages/element/layout/layout.js
 Page({
 
   /**

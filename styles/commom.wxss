@@ -8,6 +8,52 @@
   初始化项目配置
 */
 page {
+
+  /* 标准色 */
+	--red: #f4606c;
+	--orange: #f37b1d;
+	--yellow: #fbbd08;
+	--olive: #8dc63f;
+	--green: #64ce72;
+	--cyan: #21ded5;
+	--blue: #5CA3E1;
+	--purple: #a88adb;
+	--mauve: #cf6cdf;
+	--pink: #ea7bba;
+	--brown: #d5ab90;
+	--grey: #a8b5bd;
+	--black: #333333;
+	--darkGray: #666666;
+	--gray: #aaaaaa;
+	--ghostWhite: #f1f1f1;
+	--white: #ffffff;
+  /* 莫兰迪色系 */
+	--moLight1: #c7b8a1;
+	--moLight2: #afb0b2;
+	--moLight3: #939391;
+	--moLight4: #7b8b6f;
+	--moLight5: #c5b8a5;
+	--moLight6: #b5c4b1;
+	--moLight7: #8696a7;
+	--moLight8: #9ca8b8;
+	--moLight9: #656565;
+	--moLight10: #965454;
+	--moLight11: #7a7281;
+	--moLight12: #a27e7e;
+  --moLight13: #c7b49e;
+  --moLight14: #b7b9ac;
+  --moLight15: #96a48b;
+  --moLight16: #cac3bb;
+  /* 渐变色 */
+	--gradualPick: linear-gradient(to right, #ff9569, #e92758);
+	--gradualCyan: linear-gradient(45deg, #EEBD89, #D13ABD);
+	--gradualPurple: linear-gradient(-90deg, #29bdd9, #276ace);
+	--gradualYellow: linear-gradient(45deg, #6681ea, #7e43aa);
+	--gradualEmerald: linear-gradient(45deg, #d0ffae, #34ebe9);
+	--gradualGolden: linear-gradient(45deg, #EF33B1, #F6E6BC);
+  --gradualViolet: linear-gradient(45deg, #0C7BB3, #F2BAE8);
+  --ShadowSize: 5rpx 5rpx 10rpx 2rpx;
+
   background: #F8F9FD;
   font-family:PingFangSC-Regular,PingFang SC;
   font-weight:400;
@@ -31,6 +77,12 @@ navigator  {
   height: 0;
   color: transparent;
   display: none;
+}
+/*****
+  文本
+******/
+.text-bold {
+  font-weight: bold;
 }
 /*****
   flex布局
@@ -61,4 +113,168 @@ navigator  {
 }
 .justify-around {
   justify-content: space-around;
+}
+/* 背景颜色 */
+.bg-red {
+	background-color: var(--red);
+}
+.bg-orange {
+	background-color: var(--orange);
+}
+.bg-yellow {
+	background-color: var(--yellow);
+}
+.bg-olive {
+	background-color: var(--olive);
+}
+.bg-green {
+	background-color: var(--green);
+}
+.bg-cyan {
+	background-color: var(--cyan);
+}
+.bg-blue {
+	background-color: var(--blue);
+}
+.bg-purple {
+	background-color: var(--purple);
+}
+.bg-mauve {
+	background-color: var(--mauve);
+}
+.bg-pink {
+	background-color: var(--pink);
+}
+.bg-brown {
+	background-color: var(--brown);
+}
+.bg-grey {
+	background-color: var(--grey);
+}
+.bg-gray {
+	background-color: var(--gray);
+}
+.bg-black {
+	background-color: var(--black);
+}
+.bg-white {
+	background-color: var(--white);
+}
+/* 浅色背景 */
+.bg-mo-light1 {
+	background-color: var(--moLight1);
+}
+.bg-mo-light2 {
+	background-color: var(--moLight2);
+}
+.bg-mo-light3 {
+	background-color: var(--moLight3);
+}
+.bg-mo-light4 {
+	background-color: var(--moLight4);
+}
+.bg-mo-light5 {
+	background-color: var(--moLight5);
+}
+.bg-mo-light6 {
+	background-color: var(--moLight6);
+}
+.bg-mo-light7 {
+	background-color: var(--moLight7);
+}
+.bg-mo-light8 {
+	background-color: var(--moLight8);
+}
+.bg-mo-light9 {
+	background-color: var(--moLight9);
+}
+.bg-mo-light10 {
+	background-color: var(--moLight10);
+}
+.bg-mo-light11 {
+	background-color: var(--moLight11);
+}
+.bg-mo-light12 {
+	background-color: var(--moLight12);
+}
+.bg-mo-light13 {
+	background-color: var(--moLight13);
+}
+.bg-mo-light14 {
+	background-color: var(--moLight14);
+}
+.bg-mo-light15 {
+	background-color: var(--moLight15);
+}
+.bg-mo-light16 {
+	background-color: var(--moLight16);
+}
+
+/* 渐变 */
+.bg-gradual-pick {
+	background-image: var(--gradualPick);
+}
+.bg-gradual-cyan {
+	background-image: var(--gradualCyan);
+}
+.bg-gradual-purple {
+	background-image: var(--gradualPurple);
+}
+.bg-gradual-yellow {
+	background-image: var(--gradualYellow);
+}
+.bg-gradual-emerald {
+	background-image: var(--gradualEmerald);
+}
+.bg-gradual-golden {
+	background-image: var(--gradualGolden);
+}
+.bg-gradual-violet {
+	background-image: var(--gradualViolet);
+}
+/* 阴影 */
+.shadow[class*="-red"] {
+	box-shadow: var(--ShadowSize) var(--red);
+}
+.shadow[class*="-orange"] {
+	box-shadow: var(--ShadowSize) var(--orange);
+}
+.shadow[class*="-yellow"] {
+	box-shadow: var(--ShadowSize) var(--yellow);
+}
+.shadow[class*="-olive"] {
+	box-shadow: var(--ShadowSize) var(--olive);
+}
+.shadow[class*="-green"] {
+	box-shadow: var(--ShadowSize) var(--green);
+}
+.shadow[class*="-cyan"] {
+	box-shadow: var(--ShadowSize) var(--cyan);
+}
+.shadow[class*="-blue"] {
+	box-shadow: var(--ShadowSize) var(--blue);
+}
+.shadow[class*="-purple"] {
+	box-shadow: var(--ShadowSize) var(--purple);
+}
+.shadow[class*="-mauve"] {
+	box-shadow: var(--ShadowSize) var(--mauve);
+}
+.shadow[class*="-pink"] {
+	box-shadow: var(--ShadowSize) var(--pink);
+}
+.shadow[class*="-brown"] {
+	box-shadow: var(--ShadowSize) var(--brown);
+}
+.shadow[class*="-grey"] {
+	box-shadow: var(--ShadowSize) var(--grey);
+}
+.shadow[class*="-gray"] {
+	box-shadow: var(--ShadowSize) var(--gray);
+}
+.shadow[class*="-black"] {
+	box-shadow: var(--ShadowSize) var(--black);
+}
+.shadow[class*="-white"] {
+	box-shadow: var(--ShadowSize) var(--black);
 }

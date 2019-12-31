@@ -1,2 +1,23 @@
-<!--pages/tabbar/assembly/assembly.wxml-->
-<text>pages/tabbar/assembly/assembly.wxml</text>
+<!-- 列表 -->
+<view class="cc-waterfall">
+  <view class="cc-waterfall-list ">
+    <block wx:for="{{dataList}}" wx:key="index" wx:if="{{(index+1)%2!=0}}">
+      <template is="extendItem" data="{{item,index:index}}"/>
+    </block>
+  </view>
+  <view class="cc-waterfall-list ">
+    <block wx:for="{{dataList}}" wx:key="index" wx:if="{{(index+1)%2==0}}">
+      <template is="extendItem" data="{{item,index:index}}"/>
+    </block>
+  </view>
+  <!-- 模板 -->
+  <template name="extendItem">
+    <navigator class="cc-waterfall-item radius bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/element/{{item.tip}}/{{item.tip}}">
+      <view class="flex align-center justify-between">
+        <text class="item-title">{{item.name}}</text>
+        <text class="iconfont {{item.icon}}"></text>
+      </view>
+      <text class="item-desc">{{item.desc}}</text>
+    </navigator>
+  </template>
+</view>
