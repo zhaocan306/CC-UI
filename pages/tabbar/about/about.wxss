@@ -1,1 +1,51 @@
-/* pages/tabbar/about/about.wxss */
+.header {
+  height: 350rpx;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5rpx 5rpx 20rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+.header .header-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.header .header-name {
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 10rpx 0;
+}
+.header .header-version {
+  font-size: 24rpx;
+  opacity: 0.8;
+  padding-left: 10rpx;
+}
+.header .header-tip {
+  font-size: 24rpx;
+  opacity: 0.8;
+}
+.content {
+  background: var(--white);
+  border-radius: 20rpx;
+  margin: 48rpx 24rpx;
+  box-shadow: 5rpx 5rpx 20rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+.content .item {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid var(--gray);
+  padding: 0 24rpx;
+  opacity: 0.8;
+}
+.content .item:last-child {
+  border: 0;
+}
+.content .item-name {
+  font-size: 28rpx;
+  flex: 1;
+  padding-left: 20rpx;
+}

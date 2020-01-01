@@ -1,2 +1,22 @@
-<!--pages/tabbar/about/about.wxml-->
-<text>pages/tabbar/about/about.wxml</text>
+<view class="header">
+  <image class="header-img" src="/images/tab/about-active.png"></image>
+  <view class="header-name">CC UI组件库<text class="header-version">v1.0</text></view>
+  <text class="header-tip">by:CC~</text>
+</view>
+<view class="content">
+  <view class="item">
+    <text class="iconfont icon-github"></text>
+    <text class="item-name">github</text>
+    <text class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></text>
+  </view>
+  <view class="item">
+    <text class="iconfont icon-rizhi"></text>
+    <text class="item-name">日志</text>
+    <text class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></text>
+  </view>
+  <view class="item">
+    <text class="iconfont icon-github"></text>
+    <text class="item-name">关于CC UI</text>
+    <text class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></text>
+  </view>
+</view>

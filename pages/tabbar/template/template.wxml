@@ -1,6 +1,6 @@
 <!-- 列表 -->
-<scroll-view scroll-y class="list">
+<view class="list">
   <view class="item bg-{{item.style}}" wx:for="{{dataList}}" wx:key="*this">
     <view class="item-name">{{item.name}}</view>
   </view>
-</scroll-view>
+</view>
