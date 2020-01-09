@@ -1,4 +1,4 @@
-// pages/assembly/index/index.js
+// pages/assembly/swiper/swiper.js
 Page({
 
   /**

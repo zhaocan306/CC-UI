@@ -8,6 +8,32 @@
 	border-radius: 6rpx;
 }
 /*********
+  操作条
+*********/
+.cc-bar {
+  display: flex;
+	position: relative;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+}
+.cc-bar .action {
+  display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	max-width: 100%;
+  font-size: 30rpx;
+}
+.cc-bar .action:first-child>text[class*="icon-"] {
+	margin-left: -0.3em;
+	margin-right: 0.3em;
+}
+.cc-bar .action>text[class*="icon-"],
+.cc-bar .action>view[class*="icon-"] {
+	font-size: 36rpx;
+}
+/*********
   瀑布流布局
 *********/
 .cc-waterfall {

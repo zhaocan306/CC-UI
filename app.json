@@ -30,7 +30,21 @@
     {
       "root": "pages/assembly/",
       "pages": [
-        "index/index"
+        "navbar/navbar",
+        "tabbar/tabbar",
+        "notice/notice",
+        "timeline/timeline",
+        "steps/steps",
+        "swiper/swiper",
+        "numberbox/numberbox",
+        "rolling/rolling",
+        "rate/rate",
+        "options/options",
+        "countdown/countdown",
+        "toast/toast",
+        "timepricker/timepricker",
+        "suspension/suspension",
+        "collapse/collapse"
       ]
     },
     {

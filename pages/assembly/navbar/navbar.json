@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "导航栏",
+  "usingComponents": {
+    "cc-navbar": "/components/cc-navbar/cc-navbar"
+  }
+}
