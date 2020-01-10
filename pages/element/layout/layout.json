@@ -1,5 +1,7 @@
 {
   "navigationBarBackgroundColor": "#f4606c",
   "navigationBarTitleText": "布局",
-  "usingComponents": {}
+  "usingComponents": {
+    "cc-navbar": "/components/cc-navbar/cc-navbar"
+  }
 }

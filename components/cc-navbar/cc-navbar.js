@@ -38,17 +38,27 @@ Component({
         this.checkCor();
       }
     },
+    // 导航栏下边框粗细 默认1rpx
+    borderSize: {
+      type: Number,
+      value: 1
+    },
+    // 导航栏下边框颜色
+    borderColor: {
+      type: String,
+      value: '#eaeef1'
+    },
     // 字体大小 默认28rpx
     size: {
       type: Number,
       value: 28
     },
-    // 选中后 是否加粗 默认不加粗
+    // 选中后 是否加粗 默认加粗
     bold: {
       type: Boolean,
-      value: false
+      value: true
     },
-    // 字体颜色
+    // 未选中字体颜色
     color: {
       type: String,
       value: "#666"
@@ -68,6 +78,7 @@ Component({
       type: Number,
       value: 6
     },
+    // 滑块颜色
     sliderBgColor: {
       type: String,
       value: "#5CA3E1"
@@ -79,7 +90,7 @@ Component({
     }
   },
   lifetimes: {
-    ready: function () {
+    ready() {
       setTimeout(() => {
         wx.getSystemInfo({
           success: (res) => {
@@ -100,14 +111,13 @@ Component({
   methods: {
     // 计算滑动距离
     checkCor() {
-      let tabsNum = this.data.list.length
-      let padding = this.data.winWidth / 750 * this.data.padding
-      let width = this.data.winWidth - padding * 2
-      let left = (width / tabsNum - (this.data.winWidth / 700 * this.data.sliderWidth)) / 2 + padding
-      let scrollLeft = left
-      if (this.data.currentTab > 0) {
-        scrollLeft = scrollLeft + (width / tabsNum) * this.data.currentTab
-      }
+      let tabsNum = this.data.list.length // 当前list数组的长度
+      let currentTab = this.data.currentTab; // 当前选中的块
+      // 每个nav选项卡的宽度
+      let tabsWidth = (this.data.winWidth - this.data.padding) / tabsNum;
+      // 每个nav左移的距离
+      let left = (tabsWidth - this.data.sliderWidth/2)/2; 
+      let scrollLeft = this.data.padding / 2 + left + (tabsWidth * this.data.currentTab);
       this.setData({
         scrollLeft: scrollLeft
       })

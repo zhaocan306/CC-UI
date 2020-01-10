@@ -1,2 +1,146 @@
-<!--pages/element/layout/layout.wxml-->
-<text>pages/element/layout/layout.wxml</text>
+<!-- 导航栏 -->
+<cc-navbar list="{{navList}}" currentTab="{{currentTab}}" selectedColor="#f4606c" sliderBgColor="#f4606c" bind:change="change"/>
+<!-- 列表 -->
+<swiper current="{{currentTab}}" bindchange="bindchangeSwiper" duration="300" style="height:calc(100vh - 80rpx);">
+  <swiper-item wx:for="{{navList}}" wx:key="index">
+    <scroll-view scroll-y style="height:calc(100vh - 80rpx);">
+      <block wx:if="{{currentTab == 0}}">
+        <!-- 固定尺寸 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>固定尺寸(flex-basis:)
+          </view>
+        </view>
+        <view class="bg-white padding-sm">
+          <view class="flex flex-wrap">
+            <view class="basis-xs padding-sm margin-xs bg-red text-white radius">20%</view>
+            <view class="basis-xl"></view>
+            <view class="basis-sm padding-sm margin-xs bg-red text-white radius">40%</view>
+            <view class="basis-xl"></view>
+            <view class="basis-lg padding-sm margin-xs bg-red text-white radius">60%</view>
+            <view class="basis-xl padding-sm margin-xs bg-red text-white radius">80%</view>
+          </view>
+        </view>
+        <!-- 比例布局 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>比例布局(flex:)
+          </view>
+        </view>
+        <view class="bg-white padding-sm">
+          <view class="flex">
+            <view class="flex-sub padding-sm margin-xs bg-red text-white radius">1</view>
+            <view class="flex-sub padding-sm margin-xs bg-red text-white radius">1</view>
+          </view>
+          <view class="flex">
+            <view class="flex-sub padding-sm margin-xs bg-red text-white radius">1</view>
+            <view class="flex-twice padding-sm margin-xs bg-red text-white radius">2</view>
+          </view>
+          <view class="flex">
+            <view class="flex-sub padding-sm margin-xs bg-red text-white radius">1</view>
+            <view class="flex-twice padding-sm margin-xs bg-red text-white radius">2</view>
+            <view class="flex-treble padding-sm margin-xs bg-red text-white radius">3</view>
+          </view>
+        </view>
+        <!-- 垂直对齐 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>垂直对齐(align-items:)
+          </view>
+        </view>
+        <view class="bg-white padding-sm">
+          <view class="flex align-start">
+            <view class="padding-lg margin-xs bg-red text-white radius">CC UI</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">flex-start</view>
+          </view>
+          <view class="flex align-end">
+            <view class="padding-lg margin-xs bg-red text-white radius">CC UI</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">flex-end</view>
+          </view>
+          <view class="flex align-center">
+            <view class="padding-lg margin-xs bg-red text-white radius">CC UI</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">flex-center</view>
+          </view>
+        </view>
+        <!-- 文本对齐 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>文本对齐(justify-content:)
+          </view>
+        </view>
+        <view class="bg-white padding-sm">
+          <view class="flex justify-start">
+            <view class="padding-sm margin-xs bg-red text-white radius">start</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">start</view>
+          </view>
+          <view class="flex justify-end">
+            <view class="padding-sm margin-xs bg-red text-white radius">end</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">end</view>
+          </view>
+          <view class="flex justify-center">
+            <view class="padding-sm margin-xs bg-red text-white radius">center</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">center</view>
+          </view>
+          <view class="flex justify-around">
+            <view class="padding-sm margin-xs bg-red text-white radius">around</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">around</view>
+          </view>
+          <view class="flex justify-between">
+            <view class="padding-sm margin-xs bg-red text-white radius">between</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">between</view>
+          </view>
+        </view>
+        <!-- 文本排列方向 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>文本排列方向(flex-direction:)
+          </view>
+        </view>
+        <view class="bg-white padding-sm">
+          <view class="flex flex-row-reverse margin-bottom">
+            <view class="padding-sm margin-xs bg-red text-white radius">row-reverse1</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">row-reverse2</view>
+          </view>
+          <view class="flex flex-column margin-bottom">
+            <view class="padding-sm margin-xs bg-red text-white radius">flex-column1</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">flex-column2</view>
+          </view>
+          <view class="flex flex-column-reverse margin-bottom">
+            <view class="padding-sm margin-xs bg-red text-white radius">column-reverse1</view>
+            <view class="padding-sm margin-xs bg-red text-white radius">column-reverse2</view>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{currentTab == 1}}">
+        <!-- 等分列 -->
+        <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+          <view class="action">
+            <text class="iconfont icon-dian1 text-red"></text>等分列3*50X3*50(grid)
+          </view>
+        </view>
+        <view class="bg-white padding-sm grid grid-rows-lg grid-columns-lg">
+          <view class="text-center text-white bg-red" wx:for="{{9}}" wx:key="index">{{index}}</view>
+        </view>
+      </block>
+      <block wx:if="{{currentTab == 2}}">
+        <!-- 列表 -->
+        <view class="cc-waterfall">
+          <view class="cc-waterfall-list ">
+            <block wx:for="{{12}}" wx:key="index" wx:if="{{(index+1)%2!=0}}">
+              <template is="extendItem" data="{{item,index:index}}"/>
+            </block>
+          </view>
+          <view class="cc-waterfall-list ">
+            <block wx:for="{{12}}" wx:key="index" wx:if="{{(index+1)%2==0}}">
+              <template is="extendItem" data="{{item,index:index}}"/>
+            </block>
+          </view>
+          <!-- 模板 -->
+          <template name="extendItem">
+            <view class="cc-waterfall-item radius bg-red padding-xl">{{index}}</view>
+          </template>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>

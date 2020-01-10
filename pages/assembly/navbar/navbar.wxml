@@ -4,6 +4,42 @@
     <text class="iconfont icon-dian1 text-blue"></text>默认
   </view>
 </view>
-<view class="bg-white padding-lr-sm">
+<view class="bg-white">
   <cc-navbar list="{{nav1}}" currentTab="{{currentTab}}" bind:change="change"/>
+</view>
+<!-- 更改选中颜色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-blue"></text>更改选中颜色
+  </view>
+</view>
+<view class="bg-white">
+  <cc-navbar list="{{nav1}}" currentTab="{{currentTab}}" selectedColor="#f4606c" sliderBgColor="#f4606c" bind:change="change"/>
+</view>
+<!-- 更改选中样式 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-blue"></text>更改选中样式
+  </view>
+</view>
+<view class="bg-white">
+  <cc-navbar list="{{nav1}}" currentTab="{{currentTab}}" height="{{88}}" sliderWidth="{{150}}" sliderHeight="{{60}}" bottom="50%" selectedColor="#f4606c" sliderBgColor="#fccfd3" bind:change="change"/>
+</view>
+<!-- 更改背景颜色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-blue"></text>更改背景颜色
+  </view>
+</view>
+<view class="bg-white">
+  <cc-navbar list="{{nav1}}" currentTab="{{currentTab}}" height="{{88}}" bgColor="{{bgColor}}" sliderWidth="{{150}}" sliderHeight="{{60}}" bottom="50%" color="#ffffff" selectedColor="#f4606c" sliderBgColor="#ffffff" bind:change="change"/>
+</view>
+<!-- 设置禁止点击 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-blue"></text>设置禁止点击
+  </view>
+</view>
+<view class="bg-white">
+  <cc-navbar list="{{nav2}}" currentTab="{{currentTab}}" bind:change="change"/>
 </view>

@@ -16,6 +16,7 @@
 	align-items: center;
 	min-height: 100rpx;
 	justify-content: space-between;
+  border-bottom: 1rpx solid #eaeef1;
 }
 .cc-bar .action {
   display: flex;
@@ -53,7 +54,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 24rpx;
   margin-top: 48rpx;
   color: var(--white);
   position: relative;

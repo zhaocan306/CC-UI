@@ -1,2 +1,13 @@
-<!--pages/element/text/text.wxml-->
-<text>pages/element/text/text.wxml</text>
+<!-- 固定尺寸 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-orange"></text>文字颜色(color:)
+  </view>
+</view>
+<view class="bg-white padding-sm">
+  <view class="flex flex-wrap">
+    <view class="padding-sm" wx:for="{{list}}" wx:key="index">
+      <text class="text-center text-{{item}}">ccui</text>
+    </view>
+  </view>
+</view>

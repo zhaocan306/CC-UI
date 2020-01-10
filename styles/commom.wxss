@@ -54,7 +54,7 @@ page {
   --gradualViolet: linear-gradient(45deg, #0C7BB3, #F2BAE8);
   --ShadowSize: 5rpx 5rpx 10rpx 2rpx;
 
-  background: #F8F9FD;
+  background: var(--ghostWhite);
   font-family:PingFangSC-Regular,PingFang SC;
   font-weight:400;
 }
@@ -323,6 +323,15 @@ navigator  {
 .text-bold {
   font-weight: bold;
 }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 /*****
   flex布局
 ******/
@@ -352,6 +361,54 @@ navigator  {
 }
 .justify-around {
   justify-content: space-around;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-sub {
+	flex: 1;
+}
+.flex-twice {
+	flex: 2;
+}
+.flex-treble {
+	flex: 3;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.basis-xs {
+	flex-basis: 20%;
+}
+.basis-sm {
+	flex-basis: 40%;
+}
+.basis-df {
+	flex-basis: 50%;
+}
+.basis-lg {
+	flex-basis: 60%;
+}
+.basis-xl {
+	flex-basis: 80%;
+}
+/*****
+  grid布局
+******/
+.grid {
+  display: grid;
+}
+.grid-rows-lg {
+  grid-template-rows: 80rpx 80rpx 80rpx;
+}
+.grid-columns-lg {
+  grid-template-columns: 80rpx 80rpx 80rpx;
 }
 /*****
   文本颜色

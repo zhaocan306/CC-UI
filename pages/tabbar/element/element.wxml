@@ -13,7 +13,7 @@
   </view>
   <!-- 模板 -->
   <template name="extendItem">
-    <navigator class="cc-waterfall-item radius shadow bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/element/{{item.tip}}/{{item.tip}}">
+    <navigator class="cc-waterfall-item radius shadow padding-sm bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/element/{{item.tip}}/{{item.tip}}">
       <view class="flex align-center justify-between">
         <text class="item-name">{{item.name}}</text>
         <text class="iconfont {{item.icon}}"></text>

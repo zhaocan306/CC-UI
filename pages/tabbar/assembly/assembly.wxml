@@ -12,7 +12,7 @@
   </view>
   <!-- 模板 -->
   <template name="extendItem">
-    <navigator class="cc-waterfall-item radius bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/assembly/{{item.tip}}/{{item.tip}}">
+    <navigator class="cc-waterfall-item radius padding-sm bg-{{item.color}}" open-type="navigate" hover-class='none' url="/pages/assembly/{{item.tip}}/{{item.tip}}">
       <view class="flex align-center justify-between">
         <text class="item-title">{{item.name}}</text>
         <text class="iconfont {{item.icon}}"></text>

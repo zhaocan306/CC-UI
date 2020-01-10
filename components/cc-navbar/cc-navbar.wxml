@@ -1,6 +1,6 @@
-<view class="cc-nav-view {{isFixed ? 'cc-nav-fixed' : 'cc-nav-relative'}}" style="height:{{height}}rpx;padding:0 {{padding}}rpx;background:{{bgColor}};top:{{isFixed?top+'px':'auto'}}">
+<view class="cc-nav-view {{isFixed ? 'cc-nav-fixed' : 'cc-nav-relative'}}" id="navbar" style="height:{{height}}rpx;padding:0 {{padding}}rpx;background:{{bgColor}};top:{{isFixed?top+'px':'auto'}};border-bottom:{{borderSize}}rpx solid {{borderColor}}">
   <view class="cc-nav-item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" catchtap="swichTabs">
-    <view class="cc-nav-title" style="color:{{currentTab == index ? selectedColor : color }};font-size:{{size}}rpx;line-height:{{height}}rpx;font-weight:{{(bold && currentTab==index)?'bold':'normal'}};">{{item.name}}</view>
+    <view class="cc-nav-title {{item.disabled ? 'cc-nav-disabled' : ''}}" style="color:{{currentTab == index ? selectedColor : color }};font-size:{{size}}rpx;line-height:{{height}}rpx;font-weight:{{(bold && currentTab==index)?'bold':'normal'}};">{{item.name}}</view>
   </view>
   <view class="cc-nav-slider" style="transform:translateX({{scrollLeft}}px);width:{{sliderWidth}}rpx;height:{{sliderHeight}}rpx;bottom:{{bottom}};background:{{sliderBgColor}};margin-bottom:{{bottom=='50%'?('-'+sliderHeight/2+'rpx'):0}}"></view>
 </view>
