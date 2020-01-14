@@ -1,2 +1,7 @@
-<!--pages/element/icon/icon.wxml-->
-<text>pages/element/icon/icon.wxml</text>
+<view class="flex flex-wrap co-3 bg-white padding-sm">
+  <view class="padding-sm text-center" wx:for="{{iconList}}" wx:key="index">
+    <!-- <view class="iconfont text-green text-xxl icon-{{item}}"></view> -->
+    <cc-icon name="{{item}}" color="#64ce72" size="44"/>
+    <view>{{item}}</view>
+  </view>
+</view>

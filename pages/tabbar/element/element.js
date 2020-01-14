@@ -3,13 +3,13 @@ Page({
     dataList: [
       {
         name: '布局',
-        icon: 'icon-ai13',
+        icon: 'icon-layout',
         tip: 'layout',
         color: 'red'
       },
       {
         name: '文本',
-        icon: 'icon-wenben',
+        icon: 'icon-text',
         tip: 'text',
         color: 'orange'
       },
@@ -21,7 +21,7 @@ Page({
       },
       {
         name: '阴影',
-        icon: 'icon-box-shadow',
+        icon: 'icon-shadow',
         tip: 'shadow',
         color: 'olive'
       },
@@ -33,13 +33,13 @@ Page({
       },
       {
         name: '头像',
-        icon: 'icon-touxiang',
+        icon: 'icon-header',
         tip: 'identity',
         color: 'cyan'
       },
       {
         name: '按钮',
-        icon: 'icon-anniuzu',
+        icon: 'icon-button',
         tip: 'button',
         color: 'blue'
       },
@@ -51,13 +51,13 @@ Page({
       },
       {
         name: '加载',
-        icon: 'icon-jiazai',
+        icon: 'icon-loading',
         tip: 'loading',
         color: 'mauve'
       },
       {
         name: '进度条',
-        icon: 'icon-jindutiao',
+        icon: 'icon-progress',
         tip: 'progress',
         color: 'pink'
       }

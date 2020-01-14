@@ -1,0 +1,3 @@
+<view class="cc-identity {{size}}" style="border-radius: {{isRadius ? radius : 6}}rpx;background-image: url({{imageUrl}});margin-top:{{top}}rpx;margin-right:{{right}}rpx;margin-bottom:{{bottom}}rpx;margin-left:{{left}}rpx;">
+  <slot name="text"></slot>
+</view>

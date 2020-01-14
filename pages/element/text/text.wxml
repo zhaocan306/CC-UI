@@ -1,7 +1,18 @@
+<!-- 字体大小 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-orange"></text>字体大小(font-size:)
+  </view>
+</view>
+<view class="bg-white padding-sm">
+  <view class="padding-sm" wx:for="{{sizeList}}" wx:key="index">
+    <text class="text-center text-{{item}}">ccui</text>
+  </view>
+</view>
 <!-- 固定尺寸 -->
 <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
   <view class="action">
-    <text class="iconfont icon-dian1 text-orange"></text>文字颜色(color:)
+    <text class="iconfont icon-dot text-orange"></text>文字颜色(color:)
   </view>
 </view>
 <view class="bg-white padding-sm">
@@ -10,4 +21,13 @@
       <text class="text-center text-{{item}}">ccui</text>
     </view>
   </view>
+</view>
+<!-- 文字截断 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-orange"></text>文字截断(text-cut:)
+  </view>
+</view>
+<view class="bg-white padding-sm text-cut">
+  <view class="padding-sm margin-xs bg-orange text-white text-sm text-cut radius" style="width:610rpx;">这是可以文本截断的，超过指定宽度就会变成省略号。</view>
 </view>

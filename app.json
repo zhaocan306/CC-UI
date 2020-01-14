@@ -98,6 +98,7 @@
     "downloadFile": 10000
   },
   "usingComponents": {
+    "cc-icon": "/components/cc-icon/cc-icon",
     "Custom": "/components/custom/custom"
   },
   "permission": {

@@ -8,7 +8,7 @@
         <!-- 固定尺寸 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>固定尺寸(flex-basis:)
+            <text class="iconfont icon-dot text-red"></text>固定尺寸(flex-basis:)
           </view>
         </view>
         <view class="bg-white padding-sm">
@@ -24,7 +24,7 @@
         <!-- 比例布局 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>比例布局(flex:)
+            <text class="iconfont icon-dot text-red"></text>比例布局(flex:)
           </view>
         </view>
         <view class="bg-white padding-sm">
@@ -45,7 +45,7 @@
         <!-- 垂直对齐 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>垂直对齐(align-items:)
+            <text class="iconfont icon-dot text-red"></text>垂直对齐(align-items:)
           </view>
         </view>
         <view class="bg-white padding-sm">
@@ -65,7 +65,7 @@
         <!-- 文本对齐 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>文本对齐(justify-content:)
+            <text class="iconfont icon-dot text-red"></text>文本对齐(justify-content:)
           </view>
         </view>
         <view class="bg-white padding-sm">
@@ -93,7 +93,7 @@
         <!-- 文本排列方向 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>文本排列方向(flex-direction:)
+            <text class="iconfont icon-dot text-red"></text>文本排列方向(flex-direction:)
           </view>
         </view>
         <view class="bg-white padding-sm">
@@ -115,7 +115,7 @@
         <!-- 等分列 -->
         <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
           <view class="action">
-            <text class="iconfont icon-dian1 text-red"></text>等分列3*50X3*50(grid)
+            <text class="iconfont icon-dot text-red"></text>等分列3*50X3*50(grid)
           </view>
         </view>
         <view class="bg-white padding-sm grid grid-rows-lg grid-columns-lg">

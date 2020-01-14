@@ -1,0 +1,52 @@
+/*********
+  头像
+*********/
+.cc-identity {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: var(--white);
+  white-space: nowrap;
+  position: relative;
+  width: 64rpx;
+  height: 64rpx;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+.cc-identity.sm {
+	width: 48rpx;
+	height: 48rpx;
+	font-size: 1em;
+}
+.cc-identity.lg {
+	width: 96rpx;
+	height: 96rpx;
+	font-size: 2em;
+}
+.cc-identity.xl {
+	width: 128rpx;
+	height: 128rpx;
+	font-size: 2.5em;
+}
+.cc-identity-group {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  padding: 0 10rpx 0 40rpx;
+  display: inline-block;
+}
+.cc-identity-group .cc-identity {
+	margin-left: -30rpx;
+	border: 4rpx solid var(--ghostWhite);
+	vertical-align: middle;
+}
+.cc-identity-group .cc-identity.sm {
+	margin-left: -20rpx;
+	border: 1rpx solid var(--ghostWhite);
+}

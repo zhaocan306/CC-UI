@@ -1,2 +1,33 @@
-<!--pages/element/color/color.wxml-->
-<text>pages/element/color/color.wxml</text>
+<!-- 深色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-yellow"></text>深色(bg-color:)
+  </view>
+</view>
+<view class="flex flex-wrap co-3 bg-white padding-sm">
+  <view class="padding-sm" wx:for="{{colorList}}" wx:key="index">
+    <view class="padding text-white text-center radius shadow-blur bg-{{item}}">{{item}}</view>
+  </view>
+</view>
+<!-- 浅色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-yellow"></text>浅色(bg-mo-color:)
+  </view>
+</view>
+<view class="flex flex-wrap co-3 bg-white padding-sm">
+  <view class="padding-sm" wx:for="{{colormoList}}" wx:key="index">
+    <view class="padding text-white text-center radius shadow-blur bg-mo-{{item}}">{{item}}</view>
+  </view>
+</view>
+<!-- 渐变色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-yellow"></text>渐变色(bg-gradual-color:)
+  </view>
+</view>
+<view class="flex flex-wrap co-2 bg-white padding-sm">
+  <view class="padding-sm" wx:for="{{colorgradualList}}" wx:key="index">
+    <view class="padding text-white text-center radius shadow-blur bg-gradual-{{item}}">{{item}}</view>
+  </view>
+</view>

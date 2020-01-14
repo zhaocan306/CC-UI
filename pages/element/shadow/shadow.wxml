@@ -1,2 +1,23 @@
-<!--pages/element/shadow/shadow.wxml-->
-<text>pages/element/shadow/shadow.wxml</text>
+<!-- 边框 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-olive"></text>边框(solid:)
+  </view>
+</view>
+<view class="bg-white padding-sm">
+  <view class="padding margin-xs solid">四周</view>
+  <view class="padding margin-xs solid-top">上</view>
+  <view class="padding margin-xs solid-bottom">下</view>
+  <view class="padding margin-xs solid-left">左</view>
+  <view class="padding margin-xs solid-right">右</view>
+</view>
+<!-- 阴影 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-olive"></text>阴影(shadow:)
+  </view>
+</view>
+<view class="bg-white padding-sm text-white">
+  <view class="padding margin-xs radius shadow text-black bg-white">默认阴影</view>
+  <view class="padding margin-xs radius bg-blue shadow">根据背景颜色同步的阴影</view>
+</view>

@@ -1,2 +1,79 @@
-<!--pages/element/identity/identity.wxml-->
-<text>pages/element/identity/identity.wxml</text>
+<!-- 头像形状 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-cyan"></text>头像形状(round:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-warp">
+  <cc-identity imageUrl="{{imageUrl[0]}}"/>
+  <cc-identity isRadius="true" imageUrl="{{imageUrl[1]}}" left="30"/>
+</view>
+<!-- 头像大小 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-cyan"></text>头像大小
+  </view>
+</view>
+<view class="bg-white padding-sm flex align-center flex-warp">
+  <cc-identity isRadius="true" size="sm" imageUrl="{{imageUrl[1]}}"/>
+  <cc-identity isRadius="true" imageUrl="{{imageUrl[1]}}" left="30"/>
+  <cc-identity isRadius="true" size="lg" imageUrl="{{imageUrl[1]}}" left="30"/>
+  <cc-identity isRadius="true" size="xl" imageUrl="{{imageUrl[1]}}" left="30"/>
+</view>
+<view class="bg-white padding-sm flex align-center flex-warp">
+  <view class="cc-identity sm bg-cyan round">C</view>
+  <view class="cc-identity bg-cyan margin-left round">C</view>
+  <view class="cc-identity lg bg-cyan margin-left round">U</view>
+  <view class="cc-identity xl bg-cyan margin-left round">I</view>
+</view>
+<!-- 内嵌图标 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-cyan"></text>内嵌图标
+  </view>
+</view>
+<view class="bg-white padding-sm flex align-center flex-warp">
+  <view class="cc-identity bg-cyan lg round">
+    <text class="iconfont icon-header"></text>
+  </view>
+  <view class="cc-identity bg-cyan margin-left lg round">
+    <text class="iconfont icon-love"></text>
+  </view>
+</view>
+<!-- 头像组 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-cyan"></text>头像组
+  </view>
+</view>
+<view class="bg-white padding-sm flex align-center flex-warp">
+  <view class="cc-identity-group">
+    <view class="cc-identity lg round" wx:for="{{imageUrl}}" wx:key="index" style="background-image: url({{item}})"></view>
+    <view class="cc-identity lg round">
+      <text class="iconfont icon-omit"></text>
+    </view>
+  </view>
+</view>
+<!-- 头像标签 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-cyan"></text>头像标签
+  </view>
+</view>
+<view class="bg-white padding-sm flex align-center flex-warp">
+  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[1]}})">
+    <text class="cc-tag badge iconfont icon-man bg-blue"></text>
+  </view>
+  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[5]}})">
+    <text class="cc-tag badge iconfont icon-woman bg-pink"></text>
+  </view>
+  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
+    <text class="cc-tag badge iconfont icon-omit bg-red"></text>
+  </view>
+  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
+    <text class="cc-tag badge bg-red text-white">9</text>
+  </view>
+  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
+    <text class="cc-tag badge bg-red text-white">99+</text>
+  </view>
+</view>

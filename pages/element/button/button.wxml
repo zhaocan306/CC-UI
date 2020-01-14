@@ -1,2 +1,59 @@
-<!--pages/element/botton/botton.wxml-->
-<text>pages/element/botton/botton.wxml</text>
+<!-- 按钮形状 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>按钮形状(round:)
+  </view>
+</view>
+<view class="bg-white padding-sm">
+  <button class="cc-btn bg-blue text-white margin-xs" size="mini">默认</button>
+  <button class="cc-btn bg-blue text-white margin-xs round" size="mini">圆角</button>
+</view>
+<!-- 按钮尺寸 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>按钮尺寸
+  </view>
+</view>
+<view class="bg-white padding-sm flex align-center">
+  <button class="cc-btn bg-blue text-white margin-xs round sm" size="mini">小尺寸</button>
+  <button class="cc-btn bg-blue text-white margin-xs round" size="mini">默认尺寸</button>
+  <button class="cc-btn bg-blue text-white margin-xs round lg" size="mini">大尺寸</button>
+</view>
+<!-- 按钮颜色 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>按钮颜色(bg-color:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-wrap">
+  <button class="cc-btn text-white margin-xs round bg-{{item}}" size="mini" wx:for="{{colorList}}" wx:key="index">{{item}}</button>
+</view>
+<!-- 镂空按钮 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>按钮颜色(line-color:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-wrap">
+  <button class="cc-btn bg-white margin-xs round text-{{item}} line-{{item}}" size="mini" wx:for="{{colorList}}" wx:key="index">{{item}}</button>
+</view>
+<!-- 块状按钮 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>块状按钮(block:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-wrap">
+  <button class="cc-btn block lg text-white bg-blue margin-xs">蓝色</button>
+  <button class="cc-btn block lg text-white bg-red margin-xs">红色</button>
+</view>
+<!-- 无效状态 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-blue"></text>无效状态(disabled:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-wrap">
+  <button class="cc-btn block lg text-white bg-blue margin-xs" disabled>蓝色</button>
+  <button class="cc-btn block lg text-white bg-red margin-xs" disabled>红色</button>
+</view>

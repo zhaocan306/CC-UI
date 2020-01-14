@@ -1,66 +1,13 @@
-// pages/element/identity/identity.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    imageUrl: [
+      'http://shp.qpic.cn/ishow/2735010717/1546855166_-888937974_13516_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735010717/1546855120_-888937974_11394_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735010717/1546855075_-888937974_10734_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735010416/1546589802_-888937974_12369_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735010816/1546935488_-888937974_8713_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735010915/1547020060_-888937974_25739_sProdImgNo_2.jpg/0',
+      'http://shp.qpic.cn/ishow/2735122521/1545743352_-888937974_24500_sProdImgNo_2.jpg/0'
+    ]
   }
 })
