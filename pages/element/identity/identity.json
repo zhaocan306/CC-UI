@@ -2,6 +2,7 @@
   "navigationBarBackgroundColor": "#21ded5",
   "navigationBarTitleText": "头像",
   "usingComponents": {
-    "cc-identity": "/components/cc-identity/cc-identity"
+    "cc-identity": "/components/cc-identity/cc-identity",
+    "cc-identity-group": "/components/cc-identity-group/cc-identity-group"
   }
 }

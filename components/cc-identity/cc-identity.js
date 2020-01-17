@@ -1,4 +1,8 @@
 Component({
+  options:{
+    // 启动插槽
+    multipleSlots: true
+  },
   properties: {
     // 头像框是否圆角 默认不是圆角
     isRadius: {
@@ -39,6 +43,16 @@ Component({
     left: {
       type: Number,
       value: 0
+    },
+    // 头像背景颜色 默认#ccc
+    bgColor: {
+      type: String,
+      value: '#ccc'
+    },
+    // 是否为头像组 默认不是
+    isGroup: {
+      type: Boolean,
+      type: false
     }
   },
   data: {

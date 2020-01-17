@@ -35,18 +35,8 @@
 	height: 128rpx;
 	font-size: 2.5em;
 }
-.cc-identity-group {
-  direction: ltr;
-  unicode-bidi: bidi-override;
-  padding: 0 10rpx 0 40rpx;
-  display: inline-block;
-}
-.cc-identity-group .cc-identity {
+.cc-identity-group.cc-identity {
 	margin-left: -30rpx;
-	border: 4rpx solid var(--ghostWhite);
+	border: 4rpx solid #fff;
 	vertical-align: middle;
-}
-.cc-identity-group .cc-identity.sm {
-	margin-left: -20rpx;
-	border: 1rpx solid var(--ghostWhite);
 }

@@ -1,0 +1,6 @@
+.cc-identity-group {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  padding: 0 10rpx 0 40rpx;
+  display: inline-block;
+}

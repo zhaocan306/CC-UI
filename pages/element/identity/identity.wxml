@@ -21,10 +21,10 @@
   <cc-identity isRadius="true" size="xl" imageUrl="{{imageUrl[1]}}" left="30"/>
 </view>
 <view class="bg-white padding-sm flex align-center flex-warp">
-  <view class="cc-identity sm bg-cyan round">C</view>
-  <view class="cc-identity bg-cyan margin-left round">C</view>
-  <view class="cc-identity lg bg-cyan margin-left round">U</view>
-  <view class="cc-identity xl bg-cyan margin-left round">I</view>
+  <cc-identity isRadius="true" size="sm" bgColor="#21ded5"><text slot="text">C</text></cc-identity>
+  <cc-identity isRadius="true" left="30" bgColor="#21ded5"><text slot="text">C</text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" bgColor="#21ded5"><text slot="text">U</text></cc-identity>
+  <cc-identity isRadius="true" size="xl" left="30" bgColor="#21ded5"><text slot="text">I</text></cc-identity>
 </view>
 <!-- 内嵌图标 -->
 <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
@@ -33,12 +33,8 @@
   </view>
 </view>
 <view class="bg-white padding-sm flex align-center flex-warp">
-  <view class="cc-identity bg-cyan lg round">
-    <text class="iconfont icon-header"></text>
-  </view>
-  <view class="cc-identity bg-cyan margin-left lg round">
-    <text class="iconfont icon-love"></text>
-  </view>
+  <cc-identity isRadius="true" size="lg" bgColor="#21ded5"><text slot="text" class="iconfont icon-header"></text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" bgColor="#21ded5"><text slot="text" class="iconfont icon-love"></text></cc-identity>
 </view>
 <!-- 头像组 -->
 <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
@@ -47,12 +43,12 @@
   </view>
 </view>
 <view class="bg-white padding-sm flex align-center flex-warp">
-  <view class="cc-identity-group">
-    <view class="cc-identity lg round" wx:for="{{imageUrl}}" wx:key="index" style="background-image: url({{item}})"></view>
-    <view class="cc-identity lg round">
-      <text class="iconfont icon-omit"></text>
-    </view>
-  </view>
+  <cc-identity-group>
+    <block wx:for="{{imageUrl}}" wx:key="index">
+      <cc-identity isRadius="true" size="lg" imageUrl="{{item}}" isGroup="true" left="-30"/>
+    </block>
+    <cc-identity isRadius="true" size="lg" imageUrl="{{item}}" isGroup="true" left="-30"><text slot="text" class="iconfont icon-omit"></text></cc-identity>
+  </cc-identity-group>
 </view>
 <!-- 头像标签 -->
 <view class="bg-white cc-bar margin-top-sm padding-lr-sm">
@@ -61,19 +57,9 @@
   </view>
 </view>
 <view class="bg-white padding-sm flex align-center flex-warp">
-  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[1]}})">
-    <text class="cc-tag badge iconfont icon-man bg-blue"></text>
-  </view>
-  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[5]}})">
-    <text class="cc-tag badge iconfont icon-woman bg-pink"></text>
-  </view>
-  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
-    <text class="cc-tag badge iconfont icon-omit bg-red"></text>
-  </view>
-  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
-    <text class="cc-tag badge bg-red text-white">9</text>
-  </view>
-  <view class="cc-identity lg margin-left round" style="background-image: url({{imageUrl[2]}})">
-    <text class="cc-tag badge bg-red text-white">99+</text>
-  </view>
+  <cc-identity isRadius="true" size="lg" imageUrl="{{imageUrl[1]}}"><text slot="text" class="cc-tag badge iconfont icon-man bg-blue"></text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" imageUrl="{{imageUrl[1]}}"><text slot="text" class="cc-tag badge iconfont icon-woman bg-pink"></text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" imageUrl="{{imageUrl[1]}}"><text slot="text" class="cc-tag badge iconfont icon-omit bg-red"></text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" imageUrl="{{imageUrl[1]}}"><text slot="text" class="cc-tag badge bg-red text-white">9</text></cc-identity>
+  <cc-identity isRadius="true" size="lg" left="30" imageUrl="{{imageUrl[1]}}"><text slot="text" class="cc-tag badge bg-red text-white">99+</text></cc-identity>
 </view>

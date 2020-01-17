@@ -1,0 +1,3 @@
+<view class="cc-identity-group">
+  <slot></slot>
+</view>
