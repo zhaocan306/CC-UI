@@ -1,0 +1,3 @@
+<view class="cc-tag" style="background-color:{{type=='hollow' ? '#fff' : bgColor}};color:{{color}};font-size:{{size}}rpx;line-height:{{height}}rpx;margin-top:{{top}}rpx;margin-right:{{right}}rpx;margin-bottom:{{bottom}}rpx;margin-left:{{left}}rpx;border-radius:{{radius}}rpx;border-width:{{type=='hollow' ? borderWidth : 0}}rpx;border-style:{{borderStyle}};border-color:{{borderColor}};">
+  <slot name="text"></slot>
+</view>

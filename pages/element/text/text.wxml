@@ -29,5 +29,8 @@
   </view>
 </view>
 <view class="bg-white padding-sm text-cut">
-  <view class="padding-sm margin-xs bg-orange text-white text-sm text-cut radius" style="width:610rpx;">这是可以文本截断的，超过指定宽度就会变成省略号。</view>
+  <view class="padding-sm margin-xs bg-orange text-white text-sm text-cut radius" style="width:610rpx;">这是可以文本截断的，超过指定宽度就会变成省略号。这是可以文本截断的，超过指定宽度就会变成省略号。</view>
+</view>
+<view class="bg-white padding-sm text-cut-two">
+  <view class="padding-sm margin-xs bg-orange text-white text-sm text-cut-two radius" style="width:610rpx;">这是可以文本截断的，超过指定宽度两行就会变成省略号。这是可以文本截断的，超过指定宽度两行就会变成省略号。这是可以文本截断的，超过指定宽度两行就会变成省略号。</view>
 </view>

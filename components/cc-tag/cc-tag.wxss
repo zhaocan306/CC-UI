@@ -1,0 +1,15 @@
+.cc-tag {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+}
+.cc-tag.sm {
+  font-size: 24rpx;
+}
+.cc-tag.lg {
+  font-size: 30rpx;
+}
+.cc-tag.xl {
+  font-size: 36rpx;
+}

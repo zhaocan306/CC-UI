@@ -1,7 +1,7 @@
 <!-- 导航栏 -->
 <cc-navbar list="{{navList}}" currentTab="{{currentTab}}" selectedColor="#f4606c" sliderBgColor="#f4606c" bind:change="change"/>
 <!-- 列表 -->
-<swiper current="{{currentTab}}" bindchange="bindchangeSwiper" duration="300" style="height:calc(100vh - 80rpx);">
+<swiper current="{{currentTab}}" bindchange="bindchangeSwiper" duration="700" easing-function="easeOutCubic" style="height:calc(100vh - 80rpx);">
   <swiper-item wx:for="{{navList}}" wx:key="index">
     <scroll-view scroll-y style="height:calc(100vh - 80rpx);">
       <block wx:if="{{currentTab == 0}}">

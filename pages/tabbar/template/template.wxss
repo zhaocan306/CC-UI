@@ -3,7 +3,7 @@ page {
 }
 .list {
   position: relative;
-  padding: 48rpx 24rpx;
+  padding: 48rpx 24rpx; 
   overflow-x: hidden;
 }
 .list .item {

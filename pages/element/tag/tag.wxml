@@ -1,2 +1,32 @@
-<!--pages/element/tag/tag.wxml-->
-<text>pages/element/tag/tag.wxml</text>
+<!-- 实心标签 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-purple"></text>实心标签(cc-tag:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-warp">
+  <cc-tag><text slot="text">实心标签</text></cc-tag>
+  <cc-tag left="20" bgColor="#cf6cdf"><text slot="text">实心标签</text></cc-tag>
+  <cc-tag left="20" bgColor="#ea7bba"><text slot="text">实心标签</text></cc-tag>
+</view>
+<view class="bg-white padding-sm flex flex-warp">
+  <cc-tag radius="30"><text slot="text">实心标签</text></cc-tag>
+  <cc-tag left="20" bgColor="#cf6cdf" radius="30"><text slot="text">实心标签</text></cc-tag>
+  <cc-tag left="20" bgColor="#ea7bba" radius="30"><text slot="text">实心标签</text></cc-tag>
+</view>
+<!-- 镂空标签 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-purple"></text>镂空标签(cc-tag:)
+  </view>
+</view>
+<view class="bg-white padding-sm flex flex-warp">
+  <cc-tag type="hollow" color="#a88adb" borderColor="#a88adb"><text slot="text">镂空标签</text></cc-tag>
+  <cc-tag left="20" color="#cf6cdf" type="hollow" borderColor="#cf6cdf"><text slot="text">镂空标签</text></cc-tag>
+  <cc-tag left="20" color="#ea7bba" type="hollow" borderColor="#ea7bba"><text slot="text">镂空标签</text></cc-tag>
+</view>
+<view class="bg-white padding-sm flex flex-warp">
+  <cc-tag radius="30" color="#a88adb" type="hollow" borderColor="#a88adb"><text slot="text">镂空标签</text></cc-tag>
+  <cc-tag left="20" color="#cf6cdf" radius="30" type="hollow" borderColor="#cf6cdf"><text slot="text">镂空标签</text></cc-tag>
+  <cc-tag left="20" color="#ea7bba" radius="30" type="hollow" borderColor="#ea7bba"><text slot="text">镂空标签</text></cc-tag>
+</view>

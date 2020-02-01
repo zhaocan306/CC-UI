@@ -1,5 +1,7 @@
 {
   "navigationBarBackgroundColor": "#a88adb",
   "navigationBarTitleText": "标签",
-  "usingComponents": {}
+  "usingComponents": {
+    "cc-tag": "/components/cc-tag/cc-tag"
+  }
 }
