@@ -112,6 +112,13 @@ Page({
         tip: 'collapse',
         color: 'mo-light16',
         desc: '用来折叠/显示过长的内容或者是列表，内容样式支持自定义。'
+      },
+      {
+        name: '自定义顶部栏',
+        icon: 'icon-bofangqi-danmudingbukai',
+        tip: 'navigation',
+        color: 'mo-light17',
+        desc: '原生封装的自定义导航栏  可自定义返回事件 返回home 搜索框 自定义左中右。'
       }
     ]
   }

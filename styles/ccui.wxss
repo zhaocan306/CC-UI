@@ -694,6 +694,9 @@
 .bg-mo-light16 {
 	background-color: var(--moLight16);
 }
+.bg-mo-light17 {
+	background-color: var(--moLight17);
+}
 
 /* 渐变 */
 .bg-gradual-pick {

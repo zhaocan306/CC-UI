@@ -1,0 +1,1 @@
+<cc-navigation-bar background="#fff" searchBar="{{true}}" bindsearch="search"/>

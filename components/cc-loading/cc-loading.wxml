@@ -1,0 +1,2 @@
+<!-- 加载条 -->
+<view class="cc-load {{isLoad ? loadType : ''}}" style="background:{{bgColor}};"></view>

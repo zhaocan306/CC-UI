@@ -44,7 +44,8 @@
         "toast/toast",
         "timepricker/timepricker",
         "suspension/suspension",
-        "collapse/collapse"
+        "collapse/collapse",
+        "navigation/navigation"
       ]
     },
     {
@@ -99,7 +100,7 @@
   },
   "usingComponents": {
     "cc-icon": "/components/cc-icon/cc-icon",
-    "Custom": "/components/custom/custom"
+    "cc-navigation-bar": "/components/cc-navigation-bar/cc-navigation-bar"
   },
   "permission": {
     "scope.userLocation": {

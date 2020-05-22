@@ -1,5 +1,7 @@
 {
   "navigationBarBackgroundColor": "#cf6cdf",
   "navigationBarTitleText": "加载",
-  "usingComponents": {}
+  "usingComponents": {
+    "cc-loading": "/components/cc-loading/cc-loading"
+  }
 }

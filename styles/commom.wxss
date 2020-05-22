@@ -44,6 +44,7 @@ page {
   --moLight14: #abad9e;
   --moLight15: #96a48b;
   --moLight16: #bcb3a9;
+  --moLight17: #adad85;
   /* 渐变色 */
 	--gradualPick: linear-gradient(to right, #ff9569, #e92758);
 	--gradualCyan: linear-gradient(45deg, #EEBD89, #D13ABD);

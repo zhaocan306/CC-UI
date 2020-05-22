@@ -1,2 +1,21 @@
-<!--pages/element/loading/loading.wxml-->
-<text>pages/element/loading/loading.wxml</text>
+<!-- 加载状态 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-purple"></text>加载状态(cc-loading:)
+  </view>
+</view>
+<cc-loading isLoad="{{true}}"></cc-loading>
+<!-- 未加载状态 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-purple"></text>未加载状态(cc-loading:)
+  </view>
+</view>
+<cc-loading isLoad="{{true}}" loadType="over" bgColor="#999999"></cc-loading>
+<!-- 错误状态 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dot text-purple"></text>错误状态(cc-loading:)
+  </view>
+</view>
+<cc-loading isLoad="{{true}}" loadType="erro" bgColor="#f4606c"></cc-loading>

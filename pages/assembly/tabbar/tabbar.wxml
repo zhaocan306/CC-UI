@@ -1,2 +1,9 @@
-<!--pages/assembly/tabbar/tabbar.wxml-->
-<text>pages/assembly/tabbar/tabbar.wxml</text>
+<!-- 默认 -->
+<view class="bg-white cc-bar margin-top-sm padding-lr-sm">
+  <view class="action">
+    <text class="iconfont icon-dian1 text-blue"></text>默认
+  </view>
+</view>
+<view class="bg-white">
+  <cc-tabbar/>
+</view>
